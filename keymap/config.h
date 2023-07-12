@@ -1,0 +1,34 @@
+#pragma once
+
+#define EE_HANDS
+
+#define CUSTOM_FONT
+#define CUSTOM_LAYER_READ //if you remove this it causes issues - needs better guarding
+
+//#define ENCODER_DIRECTION_FLIP
+/* ws2812 RGB LED */
+#define RGB_DI_PIN D3
+
+#ifdef RGB_MATRIX_ENABLE
+#define SPLIT_LAYER_STATE_ENABLE
+
+#define RGB_MATRIX_LED_COUNT 72
+#define RGB_DISABLE_WHEN_USB_SUSPENDED
+#define RGB_DISABLE_TIMEOUT 300000
+#define RGB_MATRIX_LED_FLUSH_LIMIT 16 //~60 fps
+#define RGB_MATRIX_MAXIMUM_BRIGHTNESS 150
+#define RGB_MATRIX_SPLIT {36,36}
+
+#define RGB_MATRIX_HUE_STEP 8
+#define RGB_MATRIX_SAT_STEP 8
+#define RGB_MATRIX_VAL_STEP 8
+#define RGB_MATRIX_SPD_STEP 10
+
+#endif //RGB_MATRIX_ENABLE
+
+
+#define COMPOSE_KEY KC_PAUSE
+#define LANG_CHANGE_DEFAULT LANG_CHANGE_CAPS
+
+#undef TAPPING_TERM
+#define TAPPING_TERM 200

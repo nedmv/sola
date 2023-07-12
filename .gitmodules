@@ -1,0 +1,3 @@
+[submodule "lang_shift"]
+	path = lang_shift
+	url = git@github.com:nedmv/lang_shift.git
